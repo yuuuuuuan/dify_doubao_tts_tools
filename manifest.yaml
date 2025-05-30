@@ -8,10 +8,10 @@ label:
   zh_Hans: doubao_tts
   pt_BR: doubao_tts
 description:
-  en_US: 'dify tool based on doubao tts sdk '
-  ja_JP: 'dify tool based on doubao tts sdk '
-  zh_Hans: 'dify tool based on doubao tts sdk '
-  pt_BR: 'dify tool based on doubao tts sdk '
+  en_US: 'dify tools based on doubao tts api, turn text to speech. '
+  ja_JP: 'dify tools based on doubao tts api, turn text to speech. '
+  zh_Hans: 'dify tools based on doubao tts api, turn text to speech. '
+  pt_BR: 'dify tools based on doubao tts api, turn text to speech. '
 icon: icon.svg
 resource:
   memory: 268435456
