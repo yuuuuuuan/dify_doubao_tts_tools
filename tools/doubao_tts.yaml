@@ -1,0 +1,75 @@
+identity:
+  name: doubao_tts
+  author: yuan
+  label:
+    en_US: doubao_tts
+    zh_Hans: doubao_tts
+    pt_BR: doubao_tts
+description:
+  human:
+    en_US: dify tool based on doubao tts sdk 
+    zh_Hans: dify tool based on doubao tts sdk 
+    pt_BR: dify tool based on doubao tts sdk 
+  llm: dify tool based on doubao tts sdk 
+parameters:
+  - name: text
+    type: string
+    required: true
+    label:
+      en_US: Text
+      zh_Hans: 文本
+    human_description:
+      en_US: Text content to synthesize into speech
+      zh_Hans: 需要转换为语音的文本内容
+    form: llm
+
+  - name: voice_type
+    type: string
+    required: false
+    label:
+      en_US: Voice Type
+      zh_Hans: 音色类型
+    human_description:
+      en_US: Voice type (see Bytedance OpenSpeech documentation)
+      zh_Hans: 音色类型（详见字节跳动 OpenSpeech 文档）
+    form: form
+    default: zh_female_wanqudashu_moon_bigtts
+
+  - name: speed_ratio
+    type: number
+    required: false
+    label:
+      en_US: Speed
+      zh_Hans: 语速
+    human_description:
+      en_US: Speed ratio (e.g. 1.0 = normal)
+      zh_Hans: 语速比例（如 1.0 表示正常语速）
+    form: form
+    default: 1.0
+
+  - name: volume_ratio
+    type: number
+    required: false
+    label:
+      en_US: Volume
+      zh_Hans: 音量
+    human_description:
+      en_US: Volume ratio (e.g. 1.0 = normal)
+      zh_Hans: 音量比例（如 1.0 表示正常音量）
+    form: form
+    default: 1.0
+
+  - name: pitch_ratio
+    type: number
+    required: false
+    label:
+      en_US: Pitch
+      zh_Hans: 音高
+    human_description:
+      en_US: Pitch ratio (e.g. 1.0 = normal)
+      zh_Hans: 音高比例（如 1.0 表示正常音高）
+    form: form
+    default: 1.0
+extra:
+  python:
+    source: tools/doubao_tts.py

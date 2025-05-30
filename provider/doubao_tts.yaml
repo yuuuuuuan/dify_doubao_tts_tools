@@ -1,0 +1,61 @@
+identity:
+  author: yuan
+  name: doubao_tts
+  label:
+    en_US: doubao_tts
+    zh_Hans: doubao_tts
+    pt_BR: doubao_tts
+  description:
+    en_US: dify tool based on doubao tts sdk 
+    zh_Hans: dify tool based on doubao tts sdk 
+    pt_BR: dify tool based on doubao tts sdk 
+  icon: icon.svg
+  
+credentials_for_provider:
+  appid:
+    type: text-input
+    required: true
+    label:
+      en_US: Bytedance App ID
+      zh_Hans: 字节跳动 App ID
+    placeholder:
+      en_US: Please input your App ID
+      zh_Hans: 请输入你的 App ID
+    help:
+      en_US: Get your App ID from Bytedance OpenSpeech Console
+      zh_Hans: 可从字节跳动 OpenSpeech 控制台获取 App ID
+    url: https://openspeech.bytedance.com/console
+
+  access_token:
+    type: secret-input
+    required: true
+    label:
+      en_US: Access Token
+      zh_Hans: 访问令牌
+    placeholder:
+      en_US: Please input your access token
+      zh_Hans: 请输入你的 access token
+    help:
+      en_US: Get your token after creating an app in OpenSpeech Console
+      zh_Hans: 在 OpenSpeech 控制台创建应用后获取访问令牌
+    url: https://openspeech.bytedance.com/console
+
+  cluster:
+    type: text-input
+    required: true
+    label:
+      en_US: Cluster
+      zh_Hans: 集群
+    placeholder:
+      en_US: Please input your cluster (e.g. volcano_tts)
+      zh_Hans: 请输入你的集群名（如 volcano_tts）
+    help:
+      en_US: Default is "volcano_tts"
+      zh_Hans: 默认值通常为 "volcano_tts"
+
+
+tools:
+  - tools/doubao_tts.yaml
+extra:
+  python:
+    source: provider/doubao_tts.py
