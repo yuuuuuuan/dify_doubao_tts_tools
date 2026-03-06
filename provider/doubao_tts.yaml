@@ -24,7 +24,7 @@ credentials_for_provider:
     help:
       en_US: Get your App ID from Bytedance OpenSpeech Console
       zh_Hans: 可从字节跳动 OpenSpeech 控制台获取 App ID
-    url: https://openspeech.bytedance.com/console
+    url: https://console.volcengine.com/speech/app
 
   access_token:
     type: secret-input
@@ -38,7 +38,7 @@ credentials_for_provider:
     help:
       en_US: Get your token after creating an app in OpenSpeech Console
       zh_Hans: 在 OpenSpeech 控制台创建应用后获取访问令牌
-    url: https://openspeech.bytedance.com/console
+    url: https://console.volcengine.com/speech/app
 
   cluster:
     type: text-input
