@@ -15,7 +15,7 @@ write your bytedance appid, apikey and cluster name.
   <img src="https://github.com/yuuuuuuan/dify_doubao_tts_tools/blob/main/_assets/profile/author.PNG" width="200" />
 </p>
 
-then you can invoke this in your workflow, it can output mp3 or raw json data.
+then you can invoke this in your workflow, it can turn text to mp3 or raw json data, you can get that file by dify.
 
 <p align="center">
   <img src="https://github.com/yuuuuuuan/dify_doubao_tts_tools/blob/main/_assets/profile/setting.PNG" width="200" />
